@@ -1,12 +1,10 @@
 package aug2.pack1;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class lab9 {
+public class Lab9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
