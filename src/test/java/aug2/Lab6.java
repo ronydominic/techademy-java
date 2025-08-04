@@ -1,10 +1,11 @@
-package aug2.pack1;
+package aug2;
 
-public class Lab8 {
+
+public class Lab6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person3 p = new Person3("Rony", "Dominic", Gender.M, 8967452312l);
+		Person p = new Person("Rony", "Dominic", 'M');
 		System.out.println(p.getFirstName());
 		System.out.println(p.getLastName());
 		System.out.println(p.getGender());
@@ -16,25 +17,20 @@ public class Lab8 {
 		System.out.println(p.getFirstName());
 		System.out.println(p.getLastName());
 		System.out.println(p.getGender());
-		
-		p.displayDetails();
 
 	}
 
 }
 
-class Person3{
-	
+class Person {
 	private String firstName;
 	private String lastName;
-	private Gender gender;
-	private long phone;
+	private char gender;
 	
-	public Person3(String firstName, String lastName, Gender gender, long phone) {
+	public Person(String firstName, String lastName, char gender) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;
-		this.phone = phone;
 		
 	}
 	
@@ -51,30 +47,10 @@ class Person3{
 		return this.lastName;
 	}
 	
-	public void setGender(Gender gender) {
+	public void setGender(char gender) {
 		this.gender = gender;
 	}
-	public Gender getGender() {
+	public char getGender() {
 		return this.gender;
 	}
-	
-	public void setPhone(long phone) {
-		this.phone = phone;
-	}
-	
-	public long getPhone() {
-		return this.phone;
-	}
-	
-	public void displayDetails() {
-		System.out.println("Person Details: ");
-		System.out.println("First Name :" + this.firstName);
-		System.out.println("Last  name : " + this.lastName );
-		System.out.println("Gender: " + this.gender);
-		System.out.println("Phone: " + this.phone);
-	}
 }
-enum Gender {
-	M, F
-}
-

@@ -1,4 +1,5 @@
-package aug2.pack1;
+package aug2;
+
 
 import java.util.Scanner;
 

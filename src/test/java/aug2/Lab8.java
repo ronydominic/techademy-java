@@ -1,10 +1,11 @@
-package aug2.pack1;
+package aug2;
 
-public class Lab7 {
+
+public class Lab8 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person2 p = new Person2("Rony", "Dominic", 'M', 8967452312l);
+		Person3 p = new Person3("Rony", "Dominic", Gender.M, 8967452312l);
 		System.out.println(p.getFirstName());
 		System.out.println(p.getLastName());
 		System.out.println(p.getGender());
@@ -23,13 +24,14 @@ public class Lab7 {
 
 }
 
-class Person2{
+class Person3{
+	
 	private String firstName;
 	private String lastName;
-	private char gender;
+	private Gender gender;
 	private long phone;
 	
-	public Person2(String firstName, String lastName, char gender, long phone) {
+	public Person3(String firstName, String lastName, Gender gender, long phone) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;
@@ -50,10 +52,10 @@ class Person2{
 		return this.lastName;
 	}
 	
-	public void setGender(char gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
-	public char getGender() {
+	public Gender getGender() {
 		return this.gender;
 	}
 	
@@ -73,3 +75,7 @@ class Person2{
 		System.out.println("Phone: " + this.phone);
 	}
 }
+enum Gender {
+	M, F
+}
+
