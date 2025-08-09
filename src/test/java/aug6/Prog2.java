@@ -1,0 +1,40 @@
+package aug6;
+
+
+
+public class Prog2 {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Person1 p1 = new Person1("Smith", 22);
+			Account a1 = new Account(p1);
+			a1.deposit(2000);
+			
+			Person1 p2 = new Person1("Kathy", 32);
+			Account a2 = new Account(p2);		
+			a2.deposit(3000);
+			
+			Person1 p3 = new Person1("Arun", 12);
+			Account a3 = new Account(p3);
+			System.out.println("Initital balance of "+a1.getAccHolder().getName() +" is : " + a1.getBalance());
+			System.out.println("Initial balance of "+a2.getAccHolder().getName() +" is : " + a2.getBalance());
+			System.out.println();
+
+		
+
+			
+			a1.deposit(2000);
+			System.out.println("Updated balance of "+a1.getAccHolder().getName() +" is : " + a1.getBalance());
+			a2.withdraw(2000); 
+			System.out.println("Updated balance of "+a2.getAccHolder().getName() +" is : " + a2.getBalance());
+			System.out.println();
+			
+			System.out.println(a1);
+			System.out.println(a2);
+			
+			
+			
+
+		}
+
+}
